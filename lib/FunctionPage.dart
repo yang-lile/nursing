@@ -314,12 +314,6 @@ class _FunctionPageState extends State<FunctionPage> {
           ),
         ),
       ]),
-      // floatingActionButton: Builder(builder: (context){
-      //   if () {
-
-      //   } else {
-      //   }
-      // })
     );
   }
 
@@ -341,182 +335,182 @@ class _FunctionPageState extends State<FunctionPage> {
     ]);
   }
 
-  _showDialog({int index1, int index2, BuildContext context}) {
-    Map<String, Object> _data1 = ConstStrings.keyValueMap[index1];
-    Map<String, Object> _data2 = ConstStrings.keyValueMap[index2];
-    return showDialog(
-      context: context,
-      child: Row(children: [
-        Padding(
-          padding: const EdgeInsets.fromLTRB(300.0, 100.0, 300.0, 100.0),
-          child: Card(
-            child: Padding(
-              padding: EdgeInsets.only(left: 50.0, right: 50.0, top: 16.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Image.asset("asset/img/p.jpg"),
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Text(
-                                    _data1["nusingName"],
-                                    style: TextStyle(
-                                      fontSize: 32.0,
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Text(
-                                    "价格：${_data1["moneyDown"]}-${_data1["moneyUp"]}",
-                                    style: TextStyle(
-                                      fontSize: 20.0,
-                                      color: Colors.red[500],
-                                    ),
-                                  ),
-                                ),
-                              ]),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Divider(),
-                  Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Text(
-                      "机构性质：${_data1["institutional"]}",
-                      style: TextStyle(
-                        fontSize: 16.0,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Text(
-                      "成立时间：${_data1["time"]}",
-                      style: TextStyle(
-                        fontSize: 16.0,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Text(
-                      "占地面积：${_data1["area"]}",
-                      style: TextStyle(
-                        fontSize: 16.0,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Text(
-                      "建筑面积：${_data1["structArea"]}",
-                      style: TextStyle(
-                        fontSize: 16.0,
-                      ),
-                    ),
-                  )
-                ],
-              ),
-            ),
-          ),
-        ),
-        VerticalDivider(),
-        Padding(
-          padding: const EdgeInsets.fromLTRB(300.0, 100.0, 300.0, 100.0),
-          child: Card(
-            child: Padding(
-              padding: EdgeInsets.only(left: 50.0, right: 50.0, top: 16.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Image.asset("asset/img/p.jpg"),
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Text(
-                                    _data2["nusingName"],
-                                    style: TextStyle(
-                                      fontSize: 32.0,
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.all(8.0),
-                                  child: Text(
-                                    "价格：${_data2["moneyDown"]}-${_data2["moneyUp"]}",
-                                    style: TextStyle(
-                                      fontSize: 20.0,
-                                      color: Colors.red[500],
-                                    ),
-                                  ),
-                                ),
-                              ]),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Divider(),
-                  Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Text(
-                      "机构性质：${_data2["institutional"]}",
-                      style: TextStyle(
-                        fontSize: 16.0,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Text(
-                      "成立时间：${_data2["time"]}",
-                      style: TextStyle(
-                        fontSize: 16.0,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Text(
-                      "占地面积：${_data2["area"]}",
-                      style: TextStyle(
-                        fontSize: 16.0,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.all(8.0),
-                    child: Text(
-                      "建筑面积：${_data2["structArea"]}",
-                      style: TextStyle(
-                        fontSize: 16.0,
-                      ),
-                    ),
-                  )
-                ],
-              ),
-            ),
-          ),
-        ),
-      ]),
-    );
-  }
+  /// _showDialog({int index1, int index2, BuildContext context}) {
+  ///   Map<String, Object> _data1 = ConstStrings.keyValueMap[index1];
+  ///   Map<String, Object> _data2 = ConstStrings.keyValueMap[index2];
+  ///   return showDialog(
+  ///     context: context,
+  ///     child: Row(children: [
+  ///       Padding(
+  ///         padding: const EdgeInsets.fromLTRB(300.0, 100.0, 300.0, 100.0),
+  ///         child: Card(
+  ///           child: Padding(
+  ///             padding: EdgeInsets.only(left: 50.0, right: 50.0, top: 16.0),
+  ///             child: Column(
+  ///               crossAxisAlignment: CrossAxisAlignment.start,
+  ///               children: [
+  ///                 Row(
+  ///                   children: [
+  ///                     Image.asset("asset/img/p.jpg"),
+  ///                     Expanded(
+  ///                       child: Padding(
+  ///                         padding: const EdgeInsets.all(8.0),
+  ///                         child: Column(
+  ///                             crossAxisAlignment: CrossAxisAlignment.start,
+  ///                             children: [
+  ///                               Padding(
+  ///                                 padding: const EdgeInsets.all(8.0),
+  ///                                 child: Text(
+  ///                                   _data1["nusingName"],
+  ///                                   style: TextStyle(
+  ///                                     fontSize: 32.0,
+  ///                                   ),
+  ///                                 ),
+  ///                               ),
+  ///                               Padding(
+  ///                                 padding: const EdgeInsets.all(8.0),
+  ///                                 child: Text(
+  ///                                   "价格：${_data1["moneyDown"]}-${_data1["moneyUp"]}",
+  ///                                   style: TextStyle(
+  ///                                     fontSize: 20.0,
+  ///                                     color: Colors.red[500],
+  ///                                   ),
+  ///                                 ),
+  ///                               ),
+  ///                             ]),
+  ///                       ),
+  ///                     ),
+  ///                   ],
+  ///                 ),
+  ///                 Divider(),
+  ///                 Padding(
+  ///                   padding: EdgeInsets.all(8.0),
+  ///                   child: Text(
+  ///                     "机构性质：${_data1["institutional"]}",
+  ///                     style: TextStyle(
+  ///                       fontSize: 16.0,
+  ///                     ),
+  ///                   ),
+  ///                 ),
+  ///                 Padding(
+  ///                   padding: EdgeInsets.all(8.0),
+  ///                   child: Text(
+  ///                     "成立时间：${_data1["time"]}",
+  ///                     style: TextStyle(
+  ///                       fontSize: 16.0,
+  ///                     ),
+  ///                   ),
+  ///                 ),
+  ///                 Padding(
+  ///                   padding: EdgeInsets.all(8.0),
+  ///                   child: Text(
+  ///                     "占地面积：${_data1["area"]}",
+  ///                     style: TextStyle(
+  ///                       fontSize: 16.0,
+  ///                     ),
+  ///                   ),
+  ///                 ),
+  ///                 Padding(
+  ///                   padding: EdgeInsets.all(8.0),
+  ///                   child: Text(
+  ///                     "建筑面积：${_data1["structArea"]}",
+  ///                     style: TextStyle(
+  ///                       fontSize: 16.0,
+  ///                     ),
+  ///                   ),
+  ///                 )
+  ///               ],
+  ///             ),
+  ///           ),
+  ///         ),
+  ///       ),
+  ///       VerticalDivider(),
+  ///       Padding(
+  ///         padding: const EdgeInsets.fromLTRB(300.0, 100.0, 300.0, 100.0),
+  ///         child: Card(
+  ///           child: Padding(
+  ///             padding: EdgeInsets.only(left: 50.0, right: 50.0, top: 16.0),
+  ///             child: Column(
+  ///               crossAxisAlignment: CrossAxisAlignment.start,
+  ///               children: [
+  ///                 Row(
+  ///                   children: [
+  ///                     Image.asset("asset/img/p.jpg"),
+  ///                     Expanded(
+  ///                       child: Padding(
+  ///                         padding: const EdgeInsets.all(8.0),
+  ///                         child: Column(
+  ///                             crossAxisAlignment: CrossAxisAlignment.start,
+  ///                             children: [
+  ///                               Padding(
+  ///                                 padding: const EdgeInsets.all(8.0),
+  ///                                 child: Text(
+  ///                                   _data2["nusingName"],
+  ///                                   style: TextStyle(
+  ///                                     fontSize: 32.0,
+  ///                                   ),
+  ///                                 ),
+  ///                               ),
+  ///                               Padding(
+  ///                                 padding: const EdgeInsets.all(8.0),
+  ///                                 child: Text(
+  ///                                   "价格：${_data2["moneyDown"]}-${_data2["moneyUp"]}",
+  ///                                   style: TextStyle(
+  ///                                     fontSize: 20.0,
+  ///                                     color: Colors.red[500],
+  ///                                   ),
+  ///                                 ),
+  ///                               ),
+  ///                             ]),
+  ///                       ),
+  ///                     ),
+  ///                   ],
+  ///                 ),
+  ///                 Divider(),
+  ///                 Padding(
+  ///                   padding: EdgeInsets.all(8.0),
+  ///                   child: Text(
+  ///                     "机构性质：${_data2["institutional"]}",
+  ///                     style: TextStyle(
+  ///                       fontSize: 16.0,
+  ///                     ),
+  ///                   ),
+  ///                 ),
+  ///                 Padding(
+  ///                   padding: EdgeInsets.all(8.0),
+  ///                   child: Text(
+  ///                     "成立时间：${_data2["time"]}",
+  ///                     style: TextStyle(
+  ///                       fontSize: 16.0,
+  ///                     ),
+  ///                   ),
+  ///                 ),
+  ///                 Padding(
+  ///                   padding: EdgeInsets.all(8.0),
+  ///                   child: Text(
+  ///                     "占地面积：${_data2["area"]}",
+  ///                     style: TextStyle(
+  ///                       fontSize: 16.0,
+  ///                     ),
+  ///                   ),
+  ///                 ),
+  ///                 Padding(
+  ///                   padding: EdgeInsets.all(8.0),
+  ///                   child: Text(
+  ///                     "建筑面积：${_data2["structArea"]}",
+  ///                     style: TextStyle(
+  ///                       fontSize: 16.0,
+  ///                     ),
+  ///                   ),
+  ///                 )
+  ///               ],
+  ///             ),
+  ///           ),
+  ///         ),
+  ///       ),
+  ///     ]),
+  ///   );
+  /// }
 
   Row buildListPage(
       bool a1, bool a2, bool a3, List<bool> _selected, BuildContext context) {
@@ -575,88 +569,108 @@ class _FunctionPageState extends State<FunctionPage> {
   }
 }
 
-class _BuildCard extends StatelessWidget {
+class _BuildCard extends StatefulWidget {
   final index;
   final icon;
+  final BuildContext context;
   const _BuildCard({
     Key key,
     @required this.context,
     @required this.index,
     @required this.icon,
   }) : super(key: key);
+  @override
+  __BuildCardState createState() => __BuildCardState();
+}
 
-  final BuildContext context;
+class __BuildCardState extends State<_BuildCard> {
+  bool ex;
+  @override
+  void initState() {
+    super.initState();
+    ex = true;
+  }
 
   @override
   Widget build(BuildContext context) {
-    String pictureName = "asset/img/${ConstStrings.getName(index)} (1).jpg";
-    return Card(
-      child: FlatButton(
-        onPressed: () {
-          _showDialog(context: context, index: index);
-        },
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Image.asset(
-                pictureName,
-                height: 160,
-                width: 300.0,
-                fit: BoxFit.cover,
-                errorBuilder: (context, object, trace) {
-                  return Image.asset(
-                    "asset/img/p.jpg",
-                    height: 160,
-                    width: 300.0,
-                    fit: BoxFit.cover,
-                  );
-                },
-              ),
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Align(
-                    alignment: Alignment.topLeft,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: 50.0),
-                          child: Text(
-                            ConstStrings.keyValueMap[index]["nusingName"],
-                            style: TextStyle(fontSize: 32.0),
+    String pictureName =
+        "asset/img/${ConstStrings.getName(widget.index)} (1).jpg";
+    if (!true) {
+      return Container();
+    } else {
+      return Card(
+        child: FlatButton(
+          onPressed: () {
+            _showDialog(context: context, index: widget.index);
+          },
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Image.asset(
+                  pictureName,
+                  height: 160,
+                  width: 300.0,
+                  fit: BoxFit.cover,
+                  errorBuilder: (context, object, trace) {
+                    return Image.asset(
+                      "asset/img/p.jpg",
+                      height: 160,
+                      width: 300.0,
+                      fit: BoxFit.cover,
+                    );
+                  },
+                ),
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Align(
+                      alignment: Alignment.topLeft,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 50.0),
+                            child: Text(
+                              ConstStrings.keyValueMap[widget.index]
+                                  ["nusingName"],
+                              style: TextStyle(fontSize: 32.0),
+                            ),
                           ),
-                        ),
-                        StarsWidget(index),
-                        Text(ConstStrings.keyValueMap[index]["addtress"]),
-                      ],
+                          StarsWidget(widget.index),
+                          Text(ConstStrings.keyValueMap[widget.index]
+                              ["addtress"]),
+                        ],
+                      ),
                     ),
                   ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: FlatButton(
-                  onPressed: () {
-                    if (icon == Icons.add_shopping_cart) {
-                      ShoppingDatas.addData(index: index);
-                    } else {
-                      ShoppingDatas.delData(index: index);
-                    }
-                  },
-                  child: Icon(
-                    icon,
-                    size: 48.0,
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: FlatButton(
+                    onPressed: () {
+                      if (widget.icon == Icons.add_shopping_cart) {
+                        ShoppingDatas.addData(index: widget.index);
+                      } else {
+                        setState(() {
+                          ex = false;
+                        });
+                        ShoppingDatas.delData(index: widget.index);
+                      }
+                    },
+                    child: Icon(
+                      widget.icon,
+                      size: 48.0,
+                    ),
                   ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
-      ),
-    );
+      );
+    }
   }
 
   _showDialog({int index, BuildContext context}) {

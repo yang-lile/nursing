@@ -1,4 +1,5 @@
 import 'package:Nursing_Home/FunctionPage.dart';
+import 'package:Nursing_Home/about.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatefulWidget {
@@ -7,7 +8,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  final clickAble = [false, true, false];
+  final clickAble = [false, true, true];
   @override
   Widget build(BuildContext context) {
     return PageView(
@@ -26,12 +27,25 @@ class _MainPageState extends State<MainPage> {
       absorbing: !clickAble[i],
       child: GestureDetector(
         onTap: () {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => FunctionPage()));
+          if (i == 1) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => FunctionPage(),
+              ),
+            );
+          } else if (i == 2) {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => About(),
+              ),
+            );
+          }
         },
         child: Image.asset(
           name,
-          fit: BoxFit.fitWidth,
+          fit: BoxFit.cover,
         ),
       ),
     );

@@ -1,4 +1,3 @@
-import 'package:Nursing_Home/FunctionPage.dart';
 import 'package:Nursing_Home/MainPage.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: '优尔键养老综合系统',
-      home: FunctionPage(),
+      home: MainPage(),
       theme: ThemeData(
         primaryColor: primryColor,
         scaffoldBackgroundColor: scaffoldBackgroundColor,
